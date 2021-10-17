@@ -13,7 +13,9 @@ router.get('/', (req, res) => {
         'category_name'
       ],
       include: [
-        { model: Product }
+        {
+          model: Product
+        }
       ]
     }
   )
